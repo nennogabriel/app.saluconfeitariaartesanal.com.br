@@ -2,7 +2,7 @@
   "name": "gatsby-start-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/fikdik/app.saluconfeitariaartesanal.com.br",
+  "repository": "https://github.com/fikdik/app.saluconfeitariaartesanal.com.br.git",
   "author": "Pedro Moreno <nennogabriel@gmail.com>",
   "license": "0BSD",
   "scripts": {

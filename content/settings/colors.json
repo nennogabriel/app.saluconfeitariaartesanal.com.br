@@ -1,0 +1,85 @@
+{
+  "colors": [
+    {
+      "label": "brand",
+      "colors": [
+        "#e6f1b9",
+        "#ddec9e",
+        "#d4e784",
+        "#cae16a",
+        "#c1dc4f",
+        "#b8d735",
+        "#a7c527",
+        "#91ab22",
+        "#7b911d",
+        "#647617"
+      ],
+      "colorsRefs": [
+        "brand.50",
+        "brand.100",
+        "brand.200",
+        "brand.300",
+        "brand.400",
+        "brand.500",
+        "brand.600",
+        "brand.700",
+        "brand.800",
+        "brand.900"
+      ]
+    },
+    {
+      "label": "brand2",
+      "colors": [
+        "#fce5df",
+        "#f9cdc2",
+        "#f6b6a6",
+        "#f39f89",
+        "#f0876d",
+        "#ed7050",
+        "#ea5933",
+        "#e64218",
+        "#ca3a15",
+        "#ad3112"
+      ],
+      "colorsRefs": [
+        "brand2.50",
+        "brand2.100",
+        "brand2.200",
+        "brand2.300",
+        "brand2.400",
+        "brand2.500",
+        "brand2.600",
+        "brand2.700",
+        "brand2.800",
+        "brand2.900"
+      ]
+    },
+    {
+      "label": "gray",
+      "colors": [
+        "#aeb3a5",
+        "#9fa594",
+        "#909682",
+        "#818772",
+        "#707663",
+        "#606555",
+        "#505447",
+        "#3f4338",
+        "#2f322a",
+        "#1f211b"
+      ],
+      "colorsRefs": [
+        "gray.50",
+        "gray.100",
+        "gray.200",
+        "gray.300",
+        "gray.400",
+        "gray.500",
+        "gray.600",
+        "gray.700",
+        "gray.800",
+        "gray.900"
+      ]
+    }
+  ]
+}

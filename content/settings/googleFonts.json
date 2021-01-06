@@ -1,0 +1,11 @@
+{
+  "fonts": [
+    {
+      "family": "Roboto",
+      "variants": [
+        "400",
+        "700"
+      ]
+    }
+  ]
+}

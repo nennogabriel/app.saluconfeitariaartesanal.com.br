@@ -1,7 +1,6 @@
 import { CmsCollection } from "netlify-cms-core"
 import header from "./files/header"
 import footer from "./files/footer"
-import attentionModal from "./files/AttentionModal"
 
 const collection: CmsCollection = {
   label: "Components",
@@ -10,7 +9,7 @@ const collection: CmsCollection = {
   format: "frontmatter",
   media_folder: "../../static/img",
   public_folder: "/img",
-  files: [header, footer, attentionModal],
+  files: [header, footer],
 }
 
 export default collection

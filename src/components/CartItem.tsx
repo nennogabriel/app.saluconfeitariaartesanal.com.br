@@ -1,5 +1,5 @@
 import React, { useCallback } from "react"
-import { Button, chakra, Text } from "@chakra-ui/react"
+import { Button, chakra, Flex, Text } from "@chakra-ui/react"
 import { useDispatch } from "react-redux"
 import {
   addQuantityToCartItem,
@@ -31,25 +31,27 @@ const CartItem: React.FC<CartItemProps> = ({ cartItem }) => {
     <chakra.tr>
       <chakra.td>{cartItem.product.title}</chakra.td>
       <chakra.td>
-        <Button
-          type="button"
-          rounded="50%"
-          variant="ghost"
-          onClick={handleRemoveQuantity}
-        >
-          -
-        </Button>
-        <Text as="span" px={4}>
-          {cartItem.quantity}
-        </Text>
-        <Button
-          type="button"
-          rounded="50%"
-          variant="ghost"
-          onClick={handleAddQuantity}
-        >
-          +
-        </Button>
+        <Flex align="center">
+          <Button
+            type="button"
+            rounded="50%"
+            variant="ghost"
+            onClick={handleRemoveQuantity}
+          >
+            -
+          </Button>
+          <Text as="span" px={4}>
+            {cartItem.quantity}
+          </Text>
+          <Button
+            type="button"
+            rounded="50%"
+            variant="ghost"
+            onClick={handleAddQuantity}
+          >
+            +
+          </Button>
+        </Flex>
       </chakra.td>
       <chakra.td>
         {cartItem.product.price &&

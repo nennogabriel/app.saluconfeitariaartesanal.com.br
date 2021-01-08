@@ -1,7 +1,8 @@
 import React from "react"
-import { Container, DefaultLayout } from "../components"
+import { CartButton, Container, DefaultLayout } from "../components"
 import { graphql } from "gatsby"
 import CatalogItem from "../components/CatalogItem"
+import { Box } from "@chakra-ui/react"
 
 interface TemplateProps {
   data: {
@@ -21,9 +22,13 @@ interface TemplateProps {
 const Template: React.FC<TemplateProps> = ({ data }) => {
   return (
     <Container>
-      {data.products.map(product => (
-        <CatalogItem key={product.id} product={product} />
-      ))}
+      <CartButton />
+      <Box my={8}>
+        {data.products.map(product => (
+          <CatalogItem key={product.id} product={product} />
+        ))}
+      </Box>
+      <CartButton />
     </Container>
   )
 }

@@ -9,10 +9,12 @@ import MDXBodyRender from "./util/MDXBodyRender"
 import MetaInput from "./form/MetaInput"
 import MetaTextarea from "./form/MetaTextarea"
 import SEO from "./util/SEO"
+import CartButton from "./CartButton"
 
 export {
   SEO,
   Card,
+  CartButton,
   Container,
   DefaultLayout,
   Link,

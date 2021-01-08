@@ -15,6 +15,7 @@ import Link from "../../mdx/Link"
 import BurgerMenuIcon from "./BurgerMenuIcon"
 import { useSelector } from "react-redux"
 import { IState } from "../../../store"
+import { CartButton } from "../.."
 
 const MenuItem: React.FC<LinkProps> = ({ children, href }) => {
   return (
@@ -113,20 +114,7 @@ export const Template: React.FC<TemplateProps> = ({ data: { logo, menu } }) => {
                 ))}
               </Flex>
               <Flex justify="center" align="center" pt={{ base: 6, lg: 0 }}>
-                <ButtonGroup>
-                  <Button
-                    as={Link}
-                    href="/carrinho"
-                    colorScheme={"brand"}
-                    variant="outline"
-                  >
-                    {cartLen === 0
-                      ? "Carrinho vazio"
-                      : cartLen > 1
-                      ? `${cartLen} itens no carrinho`
-                      : "1 item no carrinho"}
-                  </Button>
-                </ButtonGroup>
+                <CartButton />
               </Flex>
             </Flex>
           </Box>

@@ -54,8 +54,9 @@ const CartItem: React.FC<CartItemProps> = ({ cartItem }) => {
         </Flex>
       </chakra.td>
       <chakra.td>
-        {cartItem.product.price &&
-          (cartItem.product.price * cartItem.quantity).toFixed(2)}
+        {cartItem.product?.price >= 0
+          ? (cartItem.product.price * cartItem.quantity).toFixed(2)
+          : "Consulte"}
       </chakra.td>
       <chakra.td>
         <Button

@@ -32,10 +32,9 @@ const fields: CmsField[] = [
     name: "price",
     widget: "number",
     value_type: "float",
-    min: 0,
-    // hint:
-    //   "O número será dividido por 100 para exibir no site, Portanto para colocar um produto a R$ 10,00 escreva 1000 na caixa de preço.",
-    required: false,
+    min: -1,
+    hint:
+      "Use ponto para demarcar os centavos. Caso queira que o preço não seja exibido, preencha o campo com o valor '-1' ",
   },
   { ...bodyField, required: false },
   metadataObject,

@@ -10,9 +10,8 @@ interface TemplateProps {
       id: string
       title: string
       slug: string
-      loja: string
       category: string
-      image: string
+      image?: string
       price: number
     }>
     body: string
@@ -68,7 +67,6 @@ const pageQuery = graphql`
           frontmatter {
             title
             slug
-            loja
             category
             image
             price
